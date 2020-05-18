@@ -16,7 +16,7 @@ def collatz_finder(x):
 # Main Function
 x_list = []
 y_list = []
-for collatzNum in range(1, 10):
+for collatzNum in range(1, 100000):
     x_list.append(collatzNum)
     y_list.append(collatz_finder(collatzNum))
 
@@ -25,5 +25,5 @@ plt.scatter(x_list, y_list)
 plt.title('Numbers vs Their Collatz Conjecture Loops')
 plt.ylabel('Number of Loops')
 plt.xlabel('Collatz Number')
-plt.axis([1, 10, 0, 50])
+plt.axis([1, 100000, 0, 500])
 plt.show()
